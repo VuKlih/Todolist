@@ -1,0 +1,173 @@
+.addTaskBackground {
+    --secondary-text-color: rgb(80, 80, 80);
+
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.addTaskContainer {
+    width: 40%;
+    min-width: 476px;
+    // min-height: 185px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.addTaskContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.addTaskContainer .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 67px;
+}
+
+.addTaskContainer .footer button {
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0 12px;
+    top: 34px;
+}
+
+.cancelBtn,
+.btnAddTask {
+    width: 84px;
+    height: 36px;
+    border: none;
+}
+.cancelBtn {
+    background-color: rgb(228, 223, 223);
+    color: rgb(85, 85, 85);
+    position: absolute;
+    right: 90px;
+}
+
+.btnAddTask {
+    background-color: rgb(220, 76, 62);
+    position: absolute;
+    right: 0px;
+    color: white;
+}
+
+.dueDateField {
+    position: absolute;
+    top: 34px;
+    left: 0px;
+}
+
+.dueDateBtn:hover {
+    background-color: rgb(167, 167, 167);
+    color: rgb(0, 0, 0);
+}
+
+.cancelBtn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(167, 167, 167);
+}
+
+.btnAddTask {
+    background-color: rgb(218, 64, 50);
+}
+
+.btnAddTask:hover {
+    background-color: rgb(173, 35, 22);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    cursor: text;
+}
+
+.des-field {
+    display: flex;
+    color: var(--secondary-text-color);
+    font-size: 13px;
+
+    input {
+        padding-left: 4px;
+        color: var(--secondary-text-color);
+        width: 100%;
+    }
+}
+
+.task-input,
+.task-des {
+    border: 0px solid white;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.task-input {
+    line-height: 21px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.take-note {
+    height: 26px;
+    width: 83px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-text-color);
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        background-color: #e7e7e7;
+    }
+
+    .add-note {
+        font-size: 13px;
+    }
+
+    p {
+        padding-left: 4px;
+        color: var(--secondary-text-color);
+    }
+}
+
+.note {
+    width: 100%;
+    min-height: 20px;
+    max-height: 250px;
+    margin-bottom: 16px;
+    overflow: auto;
+    background-color: #fffdf9;
+    
+}
+
+
+

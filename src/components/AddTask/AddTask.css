@@ -1,0 +1,13 @@
+.quill{
+    --quill-border-radius: 9px;
+}
+
+.ql-toolbar.ql-snow{
+    border-top-left-radius: var(--quill-border-radius);
+    border-top-right-radius: var(--quill-border-radius);
+}
+
+.ql-container.ql-snow{
+    border-bottom-left-radius: var(--quill-border-radius);
+    border-bottom-right-radius: var(--quill-border-radius);
+}

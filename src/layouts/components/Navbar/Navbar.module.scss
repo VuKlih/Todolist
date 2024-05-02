@@ -1,0 +1,116 @@
+/* Navbar CSS */
+.container {
+
+    padding: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    transition: 850ms;
+}
+
+.container.active{
+    width: calc(var(--navbar-width) + 16px);
+    transition: 450ms;
+    left: 0;
+    position: relative;
+
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    color: #000;
+    padding-right: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    flex: 1;
+    padding-left: 12px;
+    display: flex;
+    top: 56px;
+    left: -2000px;
+    position: fixed;
+    // transition: 850ms;
+}
+
+.nav-menu.active {
+    left: 0;
+    display: flex;
+    // transition: 450ms;
+}
+
+.nav-menu-items {
+    padding-right: 8px;
+    width: var(--navbar-width);
+}
+
+.nav-text {
+    height: 38px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    margin: 5px 0px;
+
+    .quantity {
+        width: 5px;
+        // color: #aaa;
+        font-size: 13px;
+        padding-right: 10px;
+    }
+
+    div {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .addTask {
+        color: #dc4c3e;
+        font-size: 30px;
+        padding-left: 7px;
+
+        .title {
+            color: #a81f00;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+    }
+}
+
+.nav-text a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    width: 100%;
+    color: #666;
+}
+
+.title {
+    font-size: 15px;
+    // color: #202020;
+}
+
+.nav-text:hover {
+    background-color: #f2efed;
+    border-radius: 8px;
+}
+
+.nav-text span {
+    margin-left: 12px;
+}

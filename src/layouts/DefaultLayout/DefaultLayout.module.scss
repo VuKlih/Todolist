@@ -1,0 +1,38 @@
+.container{
+    --navbar-width: 280px;
+
+    // position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 645px;
+
+    .header-wrapper{
+        position: sticky;
+        top: 0;
+        z-index: 90;
+        background-color: white;
+    }
+}
+
+.navbar{
+    background-color: rgb(252,250,248);    
+    z-index: 900;
+    // width: calc(var(--navbar-width) + 16px);
+
+}
+
+.content{
+    // position: absolute;
+    // left: 280px;
+    flex: 1;
+    min-height: 100px;
+    width: calc(100% - var(--navbar-width) + 16px);
+};
+
+.main-content{
+    padding: 0 138px;
+    margin-bottom: 100px ;
+}
+
+
+

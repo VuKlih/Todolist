@@ -1,0 +1,63 @@
+.wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+
+
+    button{
+        width: 68px;
+        height: 28px;
+        border: none;
+        border-radius: 5px;
+        padding: 0 8px;
+        background-color: transparent;
+        color: #ffaaa1;
+        cursor: pointer;
+        font-family: 'IBM Plex Sans', sans-serif;
+
+        &:hover{
+            background-color: #3d3d3d;
+        }
+    }
+
+    .title{
+        padding-right: 24px;
+        flex: 1;
+        display: flex;
+    
+    }
+}
+
+
+/* .Toastify__toast-container{
+    --toasr-border-radius: 10px;
+
+    width: 260px;
+    height: 51px;
+    box-shadow: rgba(0, 0, 0, .19) 0px 10px 20px;
+    padding: 0px;
+    border-radius: var(--toasr-border-radius);
+
+} */
+
+.Toastify__toast{
+    --toasr-border-radius: 10px;
+
+    margin: 0;
+    width: 260px;
+    height: 53px;
+    border-radius: var(--toasr-border-radius);
+    min-height: 51px;
+    align-items: center;
+
+    .Toastify__close-button{
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        align-self: unset;
+    }
+
+}

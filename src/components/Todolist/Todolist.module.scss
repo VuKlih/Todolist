@@ -1,0 +1,104 @@
+.list-item-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+
+.list-items {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.list-item {
+    width: 60%;
+    padding-left: 10px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.list-item-description,
+.list-item-dueDate,
+.list-item-completedAt,
+.list-item-createdAt {
+    font-size: 12px;
+    color: rgb(159 156 156);
+}
+
+// .list-item-description{
+//     color: #666;
+// }
+
+.list-item-dueDate {
+    display: flex;
+    align-items: center;
+    color: #ad6200;
+}
+
+
+.list-item-dueDate > span, .list-item-completedAt > span,
+.list-item-createdAt > span {
+    padding-left: 5px;
+}
+
+.button-complete,
+.button-delete,
+.button-edit,
+.button-start {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.button-complete {
+    margin-right: 10px;
+}
+
+.buttons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-edit {
+    margin-right: 8px;
+}
+
+.complete {
+    text-decoration-style: solid;
+    text-decoration-color: rgb(153, 153, 153);
+    color: rgb(153, 153, 153);
+}
+
+.complete .list-item-title{
+    text-decoration: line-through;
+}
+
+// .clicked {
+//     height: 60px;
+// }
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+.details {
+    position: absolute;
+    display: flex;
+    top: 50px;
+    left: 20px;
+    color: white;
+}
+
+.details > p {
+    margin-right: 20px;
+}
