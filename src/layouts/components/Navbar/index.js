@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IconContext } from 'react-icons';
 import classNames from 'classnames/bind';
 import styles from './Navbar.module.scss';
-import { Link, NavLink } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 import { BsLayoutSidebar } from 'react-icons/bs';
 import { webRoutes } from '~/routes';
 
